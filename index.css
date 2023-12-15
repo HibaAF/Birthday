@@ -29,30 +29,6 @@ body {
     color: rgb(183, 219, 251);
     font-size: 20px;
   }
-
-/* Base Styles */
-.book p {
-  text-align: left;
-} 
-
-/* Center .book p on mobile */
-@media (max-width: 576px) {
-  .book p {
-    text-align: center; 
-  }
-}
-
-/* Mobile Styles */
-.book p {
-  text-align: center;
-}
-
-/* Apply left-align on wider screens */  
-@media (min-width: 576px) {
- .book p {
-   text-align: left;
- }
-}
   
 
   @keyframes wave {
@@ -98,30 +74,6 @@ body {
   
   color: rgb(8, 67, 98) !important;
   font-size: 20px;
-}
-
-/* Base styles */
-.cover p {
-  text-align: left; 
-}
-
-/* Center paragraph on mobile */
-@media (max-width: 576px) {
-  .cover p {
-    text-align: center;
-  }  
-}
-
-/* Mobile styles */  
-.cover p {
-  text-align: center;
-}
-
-/* Apply left align only on larger screens */
-@media (min-width: 576px) {
-  .cover p {
-     text-align: left; 
-  }
 }
 
 
