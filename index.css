@@ -1,0 +1,85 @@
+body {
+    background-image: linear-gradient (135deg, #043057 0%, #093b66 100%);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 500px; 
+    height: 600PX;
+    background-image: url(./Assets/Nash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: 98%;
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(183, 219, 251);
+    font-size: 20px;
+  }
+
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .confetti {
+    transition: transform 0.5s;  
+  }
+  
+  .confetti:hover {
+    animation: wave 0.5s infinite;
+  }
+ 
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: rgb(12, 1, 1);
+  background-color: #0a2e43; 
+  background-image: url(./Assets/Birthday.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform-origin: 0;
+  box-shadow: 1px 1px 12px #000;
+  
+  text-align: center;
+  display: top;  
+  flex-direction: column;
+  justify-content: center;
+  
+  color: rgb(8, 67, 98) !important;
+  font-size: 20px;
+}
+
+
+.book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-85deg);
+    -ms-transform: rotatey(-85deg);
+    transform: rotatey(-85deg);
+}
